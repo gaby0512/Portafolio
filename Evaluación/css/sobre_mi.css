@@ -1,0 +1,125 @@
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #d6dfec;
+    color: #333;
+    padding: 0;
+    margin: 0;
+   
+}
+
+header {
+    background-color: rgb(33, 62, 95);
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 65px;
+}
+
+header h2 {
+    margin: 0 auto;
+    animation: bounce 1s;
+}
+
+nav {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    float: right;
+    position: absolute;
+    animation: bounce 1s;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    height: 40%;
+    animation: bounce 1s;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.container{
+    
+    text-align: center;
+    padding: 50px;
+    border-radius: 10px;
+    height: 20rem;
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: rgba(49, 52, 70, 0.486);
+    position: relative;
+    color: #ffffff;
+    font-size: 20px;
+    top: 5rem;
+    left: 0rem;
+    right: 5rem;
+    animation: bounce 1s;
+
+}
+
+.redes {
+    display: flex;
+    justify-content: center; /* Centra los enlaces horizontalmente */
+    gap: 15px; /* Espacio entre los enlaces */
+    margin-top: 20px;
+}
+
+.redes a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.redes a:hover {
+    color: rgb(33, 62, 95); /* Color de cambio al pasar el mouse */
+}
+
+footer{
+    margin: 0;
+    padding: 10px;
+    color: #e6dfdf33;
+    background-color: rgb(33, 62, 95);
+    margin-top:25%;
+    height: 5rem;
+    margin-top: 30rem;
+
+    
+}
+footer p{
+    text-align: center;
+}

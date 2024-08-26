@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTAFOLIO</title>
+    <link rel="stylesheet" type="text/css" href="css/proyectos.css">
+    <link rel="icon" href="img/programador.png">
+</head>
+<body>
+    <header>
+    <h2>PROYECTOS</h2>
+    <nav>
+    <li><a href="inicio.html">INICIO</a></li>
+</nav>
+</header>
+
+
+
+    <section id="projects">
+        <h1>Galería de Proyectos</h1>
+        <div class="gallery">
+            <!-- Proyecto 1 -->
+            <div class="project-card" onclick="showDetails('project1')">
+                <img src="img/miniatura1.webp" alt="Miniatura del Proyecto 1"><!--https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.shutterstock.com%2Fes%2Fsearch%2Fevaluar-proyecto%3Fimage_type%3Dillustration&psig=AOvVaw22pnVjU_VadFP1oqyOshUD&ust=1724710288145000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCLighfWUkYgDFQAAAAAdAAAAABBF-->
+                <h2>Resultados y Análisis de Datos:</h2>
+                <p>Sistema automatizado para analizar y visualizar datos con gráficos interactivos, facilitando la toma de decisiones empresariales en tiempo real.</p>
+            </div>
+            <!-- Proyecto 2 -->
+            <div class="project-card" onclick="showDetails('project2')">
+                <img src="img/miniatura2.webp" alt="Miniatura del Proyecto 2">            <!-- https://www.google.com/url?sa=i&url=https%3A%2F%2Fes.martech.zone%2Fcodepen-built-test-share-discover-html-css-javascript%2F&psig=AOvVaw22pnVjU_VadFP1oqyOshUD&ust=1724710288145000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCLighfWUkYgDFQAAAAAdAAAAABA7 -->
+
+                <h2>Plataforma de Desarrollo Front-End:</h2>
+                <p>Entorno en línea para desarrollar, probar y colaborar en código front-end, soportando HTML, CSS y JavaScript con animaciones avanzadas.</p>
+            </div>
+        </div>
+
+        <!-- Detalles del Proyecto -->
+        <div id="project-details" class="details-modal">
+            <div id="project-info">
+                <a href="#" class="close-btn" onclick="closeDetails()">&times;</a>
+                <div id="project-content">
+                    <!-- La información detallada del proyecto se inyectará aquí con JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+    <footer>
+        <div class="redes">
+            <a href="https://www.facebook.com/profile.php?id=100072511699437&mibextid=LQQJ4d" title="Facebook">Facebook</a>
+            <a href="https://www.instagram.com/gabylopez1281?igsh=MXQ3dDE1cmtxeHo2Nw%3D%3D&utm_source=qr" title="Instagram">Instagram</a>
+        </div>
+    
+        <p></br>&copy; 2024 Gabriela López</p>
+    </footer>
+</body>
+</html>
+    <a href="index.html" class="boton"></a> 
+</div>

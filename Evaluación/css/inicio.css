@@ -1,0 +1,236 @@
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: rgb(166, 191, 219);
+    color: #333;
+    max-width: 35rem;
+}
+
+h1 {
+    margin-bottom: 10px;
+    background-color: rgb(33, 62, 95);
+    border-radius: 10px;
+    text-align: center;
+    color: #ffffff;
+    padding: 135px;
+    font-family: 'Righteous';
+    width: 50%;
+    height: 60%;
+    position: absolute;
+    top: 25%;
+    left: 35px;
+    font-size: 30px;
+    animation: bounce 1s;
+}
+
+.imagen {
+    display: flex;
+    position: relative;
+    padding: 2rem;
+    top: 4rem;
+    left: 70rem;
+}
+
+.imagen img {
+    height: 25rem;
+    width: 25rem;
+    animation: bounce 1s;
+}
+
+nav {
+    position: fixed;
+    bottom: 100%;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 10px 0;
+}
+
+header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    width: 100%;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(33, 62, 95);
+    z-index: 1000;
+}
+
+main {
+    margin-top: 70px; /* Altura del header */
+    padding: 10px;
+}
+
+/* Pie de página */
+footer {
+    width: 116.5rem; /* Ajuste para ancho completo */
+    color: #e6dfdf33;
+    background-color: rgb(33, 62, 95);
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+    margin-top: 21rem;
+    margin-bottom: 0;
+    height: 8rem;
+    min-height: 100px;
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navegación */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-left: 0; /* Eliminado para ajustar con el diseño responsivo */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Contenedor */
+.container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    height: auto;
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+/* Media Queries */
+
+/* Para pantallas con un ancho máximo de 1024px (pantallas de tabletas y dispositivos grandes) */
+@media (max-width: 1024px) {
+    h1 {
+        padding: 80px; /* Reduce el padding en pantallas más pequeñas */
+        font-size: 24px;
+        width: 70%;
+        left: 15px; /* Ajusta la posición horizontal */
+    }
+
+    .imagen {
+        left: 50%; /* Ajusta la posición horizontal */
+        transform: translateX(-50%); /* Centra la imagen horizontalmente */
+    }
+
+    .imagen img {
+        height: 20rem;
+        width: 20rem;
+    }
+
+    footer {
+        margin-top: 21rem; /* Ajusta el margen superior */
+    }
+}
+
+/* Para pantallas con un ancho máximo de 768px (tabletas y dispositivos medianos) */
+@media (max-width: 768px) {
+    h1 {
+        padding: 60px; /* Reduce el padding aún más */
+        font-size: 20px;
+        width: 80%;
+        left: 10px; /* Ajusta la posición horizontal */
+    }
+
+    .imagen {
+        left: 0;
+        transform: none;
+        top: 2rem;
+    }
+
+    .imagen img {
+        height: 15rem;
+        width: 15rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-left: 0; /* Ajusta el margen */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Ajusta el margen de los elementos de la lista */
+    }
+
+    footer {
+        margin-top: 21rem; /* Ajusta el margen superior */
+    }
+}
+
+/* Para pantallas con un ancho máximo de 480px (teléfonos móviles) */
+@media (max-width: 480px) {
+    h1 {
+        padding: 40px; /* Reduce el padding para pantallas pequeñas */
+        font-size: 18px;
+        width: 90%;
+        left: 0; /* Ajusta la posición horizontal */
+        top: 10%; /* Ajusta la posición vertical */
+    }
+
+    .imagen {
+        top: 1rem;
+        left: 0;
+        transform: none;
+    }
+
+    .imagen img {
+        height: 12rem;
+        width: 12rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Ajusta el margen de los elementos de la lista */
+    }
+
+    footer {
+        margin-top: 20px; /* Ajusta el margen superior */
+        height: auto; /* Permite que el footer crezca si es necesario */
+    }
+
+    footer p {
+        font-size: 14px; /* Ajusta el tamaño de la fuente en el pie de página */
+    }
+}

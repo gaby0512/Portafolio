@@ -1,0 +1,248 @@
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d6dfec;
+    color: #333;
+    padding: 0px;
+    margin: 0;
+}
+
+/* Encabezado */
+header {
+    background-color: rgb(33, 62, 95);
+    color: white;
+    padding: 10px;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    animation: bounce 1s;
+    height: 65px;
+    z-index: 1000;
+}
+
+header h2 {
+    margin-left: 43%;
+    animation: bounce 1s;
+}
+
+/* Navegación */
+nav {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    float: right;
+    position: absolute;
+    animation: bounce 1s;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    height: 40%;
+    animation: bounce 1s;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/* Contenedor principal */
+.container {
+    text-align: center;
+    padding: 50px;
+    border-radius: 10px;
+    height: 20rem;
+    max-width: 70%;
+    margin: 50px auto;
+    background-color: rgba(49, 52, 70, 0.486);
+    position: relative;
+    color: #ffffff;
+    font-size: 20px;
+    top: 5rem;
+    left: 0rem;
+    right: 5rem;
+    animation: bounce 1s;
+}
+
+/* Formulario de contacto */
+.contact-form {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 300px;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+.contact-form h1 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 4px;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: rgb(33, 62, 95);
+    border: none;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+button:hover {
+    background-color: #0a3768;
+}
+
+/* Pie de página */
+footer {
+    width: 119rem;
+    color: #e6dfdf33;
+    background-color: rgb(33, 62, 95);
+    padding: 10px 0;
+    text-align: center;
+    margin: 0;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    min-height: 100px;
+    margin-top: 22rem;
+    margin-left: -20rem;
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Redes sociales */
+.redes {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.redes a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.redes a:hover {
+    color: rgb(33, 62, 95);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header h2 {
+        margin-left: 20%;
+    }
+
+    nav {
+        float: none;
+        position: static;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .container {
+        padding: 20px;
+        max-width: 90%;
+        top: 2rem;
+        left: 2rem;
+        right: 2rem;
+    }
+
+    footer {
+        width: 100%;
+        margin-top: 10rem;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    header h2 {
+        font-size: 18px;
+    }
+
+    nav {
+        font-size: 14px;
+    }
+
+    .contact-form h1 {
+        font-size: 18px;
+    }
+
+    .container {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .form-group input, .form-group textarea {
+        padding: 6px;
+    }
+
+    button {
+        font-size: 12px;
+        padding: 6px;
+    }
+}

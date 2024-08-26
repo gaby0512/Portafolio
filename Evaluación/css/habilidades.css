@@ -1,0 +1,237 @@
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #d6dfec;
+    color: #333;
+    margin: 0;
+    padding: 0px;
+}
+
+/* Encabezado */
+header {
+    background-color: rgb(33, 62, 95);
+    color: white;
+    padding: 10px;
+    display: flex;
+    position: fixed;
+    align-items: center; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    animation: bounce 1s;
+    height: 65px;
+    z-index: 1000;
+}
+
+header h2 {
+    margin-left: 43%;
+}
+
+/* Navegación */
+nav {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    float: right;
+    position: absolute;
+    animation: bounce 1s;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    height: 40%;
+    animation: bounce 1s;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/* Contenedor principal */
+.container {
+    text-align: center;
+    padding: 50px;
+    border-radius: 10px;
+    height: 20rem;
+    max-width: 70%;
+    margin: 50px auto;
+    background-color: rgba(49, 52, 70, 0.486);
+    position: relative;
+    color: #ffffff;
+    font-size: 20px;
+    top: 5rem;
+    left: 0rem;
+    right: 5rem;
+    animation: bounce 1s;
+}
+
+/* Habilidades */
+#habilidades {
+    padding: 20px;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill-category {
+    flex: 1;
+    min-width: 300px;
+}
+
+.skill-category h3 {
+    margin-top: 0;
+}
+
+.skill {
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    background-color: #eee;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 20px;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.progress {
+    background-color: rgb(33, 62, 95);
+    height: 100%;
+    transition: width 0.5s;
+}
+
+/* Pie de página */
+footer {
+    width: 117rem; /* Ocupa el ancho completo de la ventana */
+    color: #e6dfdf33;
+    background-color: rgb(33, 62, 95);
+    padding: 10px 0; /* Padding vertical para alinear el contenido */
+    text-align: center; /* Centra el texto */
+    margin: 0; /* Sin márgenes adicionales */
+    position: relative; /* Posiciona el footer en la parte inferior de la ventana */
+    bottom: 0;
+    left: 0;
+    right: 0; 
+    min-height: 100px;
+    margin-top: 30rem;
+    margin-left: -18rem;
+}
+
+footer p {
+    margin: 0; /* Elimina márgenes adicionales del párrafo */
+    padding: 0; /* Elimina padding adicional del párrafo */
+}
+
+/* Redes sociales */
+.redes {
+    display: flex;
+    justify-content: center; /* Centra los enlaces horizontalmente */
+    gap: 15px; /* Espacio entre los enlaces */
+    margin-top: 20px;
+}
+
+.redes a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.redes a:hover {
+    color: rgb(33, 62, 95); /* Color de cambio al pasar el mouse */
+}
+
+/* Media Queries */
+
+/* Para pantallas con un ancho máximo de 768px (tabletas y dispositivos medianos) */
+@media (max-width: 768px) {
+    header h2 {
+        margin-left: 20%;
+    }
+
+    nav {
+        float: none;
+        position: static;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .container {
+        padding: 20px;
+        max-width: 90%;
+        top: 2rem;
+        left: 2rem;
+        right: 2rem;
+    }
+
+    footer {
+        width: 100%;
+        margin-top: 10rem;
+        margin-left: 0;
+    }
+}
+
+/* Para pantallas con un ancho máximo de 480px (teléfonos móviles) */
+@media (max-width: 480px) {
+    header h2 {
+        font-size: 18px;
+    }
+
+    nav {
+        font-size: 14px;
+    }
+
+    .container {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-category {
+        min-width: 100%;
+    }
+
+    .form-group input, .form-group textarea {
+        padding: 6px;
+    }
+
+    button {
+        font-size: 12px;
+        padding: 6px;
+    }
+}
